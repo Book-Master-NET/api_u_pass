@@ -2,9 +2,9 @@ spring:
   application:
     name: u_pass
   datasource:
-    url: ${DATABASE_PASSWORD}
-    username: ${DATABASE_URL}
-    password: ${DATABASE_USERNAME}
+    url: ${DATABASE_URL}
+    username: ${DATABASE_USERNAME}
+    password: ${DATABASE_PASSWORD}
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
@@ -25,5 +25,5 @@ springdoc:
     operations-sorter: method
     tags-sorter: alpha
 jwt:
-  secret: ${JWT_SECRET}
+  secret: ${JWT_SECRET:404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970}
   expiration: 86400000
